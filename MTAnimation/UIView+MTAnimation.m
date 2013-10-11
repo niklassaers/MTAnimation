@@ -285,8 +285,8 @@ static const char startUserInteractionEnabledKey;
     self.startAlpha         = self.alpha;
 
     // UIViewAnimationOptionAllowUserInteraction
+    self.startUserInteractionEnabled    = self.userInteractionEnabled; // Snapshot this, because otherwise you set all views to userInteractionEnabled, even the ones that had this disabled
     // TODO: user interaciton is not being re-enabled
-//    self.startUserInteractionEnabled    = self.userInteractionEnabled;
 //    if (!inMask(options, MTAnimationOptionAllowUserInteraction)) {
 //        self.userInteractionEnabled = NO;
 //    }
